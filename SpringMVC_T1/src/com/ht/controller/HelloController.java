@@ -26,6 +26,7 @@ public class HelloController implements Controller{
         mv.setViewName("hello");//设置视图的逻辑名称
         System.out.println("mv = " + mv);
         System.out.println("");
+
         return mv;
     }
 
