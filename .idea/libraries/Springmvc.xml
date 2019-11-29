@@ -1,0 +1,27 @@
+<component name="libraryTable">
+  <library name="Springmvc">
+    <CLASSES>
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/commons-logging-1.1.1.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/javax.servlet-api-3.1.0.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/jstl-1.2.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-aop-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-beans-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-context-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-context-support-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-core-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-expression-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-instrument-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-instrument-tomcat-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-messaging-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-orm-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-oxm-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-test-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-tx-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-web-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-webmvc-4.1.5.RELEASE.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo1/web/WEB-INF/lib/spring-webmvc-portlet-4.1.5.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

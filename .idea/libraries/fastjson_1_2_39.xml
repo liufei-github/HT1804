@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="fastjson-1.2.39">
+    <CLASSES>
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo2/web/WEB-INF/lib/fastjson-1.2.8.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo2/web/WEB-INF/lib/jackson-annotations-2.9.4.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo2/web/WEB-INF/lib/jackson-core-2.9.4.jar!/" />
+      <root url="jar://E:/课件/第三学期/Spring MVC课件/ht2/demo2/web/WEB-INF/lib/jackson-databind-2.9.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

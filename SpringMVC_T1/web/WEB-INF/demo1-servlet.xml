@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!--3、新建一个demo1-servlet.xml文件-->
+    <!--3.1 配置HandlerMapping 处理器映射器-->
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+
+    <!--3.2配置HandlerAdapter 处理器适配器-->
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+
+    <!--3.3配置viewresolver 视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <!--设置视图类型-->
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <!--配置视图的前缀-->
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <!--配置视图的后缀-->
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+    <!--3.4配置处理器 -->
+    <bean name="/hello" class="com.ht.controller.HelloController"> </bean>
+</beans>

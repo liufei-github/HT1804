@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/mvc http://www.springframework.org/schema/mvc/spring-mvc.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+    <!-- 1、开启注解，自动注册 处理器映射器，处理器适配器-->
+    <mvc:annotation-driven/>
+
+    <!--2、配置静态资源-->
+    <mvc:default-servlet-handler/>
+
+    <!--配置静态资源映射路径-->
+    <mvc:resources mapping="/static/**" location="/WEB-INF/static/"/>
+
+    <!--3、配置视图解析器-->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
+        <property name="viewClass" value="org.springframework.web.servlet.view.JstlView"/>
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+    
+    <!--4、controller扫描器-->
+    <context:component-scan base-package="com.ht"/>
+
+    <!--配置文件上传相关类-->
+    <bean id="multipartResolver" class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
+        <!--限制文件上传大小 单位字节 -->
+        <property name="maxUploadSize" value="1048576"/>
+    </bean>
+
+    <!-- 国际化资源文件 -->
+    <bean id="messageSource" class="org.springframework.context.support.ReloadableResourceBundleMessageSource">
+        <!-- 表示多语言配置文件在根路径下，以i18n开头的文件-->
+        <property name="basename" value="classpath:language/msg"/>
+        <property name="useCodeAsDefaultMessage" value="true"/>
+    </bean>
+    <!-- 配置SessionLocaleResolver用于将Locale对象存储于Session中供后续使用 -->
+    <bean id="localeResolver"
+          class="org.springframework.web.servlet.i18n.SessionLocaleResolver"></bean>
+    <!-- 拦截器配置 -->
+    <mvc:interceptors>
+        <!-- 国际化拦截器 -->
+        <bean id="localeChangeInterceptor" class="org.springframework.web.servlet.i18n.LocaleChangeInterceptor">
+            <property name="paramName" value="lang"/>
+        </bean>
+    </mvc:interceptors>
+
+</beans>
