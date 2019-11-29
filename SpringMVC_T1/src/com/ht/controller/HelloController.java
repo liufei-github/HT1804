@@ -24,6 +24,14 @@ public class HelloController implements Controller{
         ModelAndView mv = new ModelAndView();
         mv.addObject("msg","你好，"+uname);//设置属性
         mv.setViewName("hello");//设置视图的逻辑名称
+        System.out.println("mv = " + mv);
+        System.out.println("");
         return mv;
     }
+
+
+
+
+
+
 }
